@@ -14,5 +14,6 @@ a:visited{
     color: lightgrey;
 }
 img:hover{
-    visibility:hidden;
+    opacity: 0;
 }
+
