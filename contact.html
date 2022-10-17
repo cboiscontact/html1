@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site01.css">
+    <title>contact</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="bannière du site">
+        <h1>titre du site</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html" title="vers accueil">accueil</a></li>
+                <li><a href="accueil.html#article03" title="vers article 03 de l'accueil">blog</a></li>
+                <li>gallerie</li>
+                <li><a href="contact.html" title="vous êtes ici">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="programme.php">
+            <fieldset>
+                <legend>contact</legend>
+                <div>
+                    <label for="nom">nom <span class="required">*</span>:</label>
+                    <!-- pas de min pour un nom, il y a des personnes qui ont un nom d'une lettre -->
+                    <input type="text" name="nom" required placeholder="nom" maxlength="20" id="nom">
+                    
+                </div>
+                <div>
+                    <label for="mail">mail <span class="required">*</span>:</label>
+                    <input type="mail" name="mail" required placeholder="mail" id="mail">
+                </div>
+                <div>
+                    <label for="commentaire">laissez un commentaire</label>
+                    <br>
+                    <textarea rows="10" cols="70" placeholder="commentez" id="commentaire"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="check" checked id="check">
+                    <label for="check">envoyez une copie par mail</label> 
+                </div>
+                <div>
+                    <input type="submit" value="envoyer">
+                    <input type="reset" value="reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="lien1.html" title="en travaux">lien 1</a></li>
+            <li><a href="lien2.html" title="en travaux">lien 2</a></li>
+            <li><a href="lien3.html" title="en travaux">lien 3</a></li>
+            <li><a href="lien4.html" title="en travaux">lien 4</a></li>
+        </ul>
+    </footer>    
+</body>
+</html>
